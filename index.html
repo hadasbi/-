@@ -86,12 +86,19 @@ These variations potentially indicate the presence of somatic point mutations, h
                                             </ul>
                                         </article>
                                         <article>
-                                            <a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-                                            <h3>Sed etiam facilis</h3>
-                                            <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                                            <ul class="actions">
-                                                <li><a href="#" class="button">More</a></li>
-                                            </ul>
+                                            <a href="#" class="image"><img src="images/pihg.png" alt="" /></a>
+                                            <h3>piHG: Partial Intersection HyperGeometric test</h3>
+                                            <p>Researchers often study the intersections of multiple sets of items. In Biology, this task is very common: merging lists of proteins from several replicates of an experiment or merging lists of genes reported by different papers. A merged set may be formed by an intersection of all lists, by a union of them, or by an in-between solution, for example - all items that appear in at least <MATH>s</MATH> lists out of <MATH>n</MATH> (note that the full intersection is given by <MATH>s=n</MATH>, and the union is given by <MATH>s=1</MATH>). However, due to the absence of statistical evaluation protocols, partial intersection results are usually decided upon arbitrarily and reported 
+                                              without an indication of their statistical significance.
+<br>We developed a statistical framework to evaluate the significance of the size of a partial intersection set that was formed by assembling all items that are
+members of at least <MATH>s</MATH> out of <MATH>n</MATH> sets. More explicitly, for any overall number of items <MATH>N</MATH>, sizes of sets <MATH>w_1,...,w_n</MATH>, number of sets <MATH>n</MATH>
+and a parameter <MATH>s\in \{1,...,n\}</MATH>, we
+developed a mathematical formula to evaluate the p-value for getting an actual partial intersection set of size <MATH>x</MATH>. Since this formula is computationally heavy, we also
+developed a binomial approximation scheme.
+<br>We developed methods and tools to support statistically informed decision as to the type of merging process, based on partial
+intersections, that best fits the data. That is, for any <MATH>n</MATH> sets of items, one can conclude the <MATH>s</MATH> for which the agreement between sets is maximal, obtaining the best statistical significance. The choice is no longer
+arbitrary.
+<br>We applied this approach to two datasets: the contaminant repository for affinity purification mass spectrometry data (CRAPome), and a meta-analysis for marker genes of two cell types in the mammary gland. We plan to make this approach available as a webtool for the research community.</p>
                                         </article>
                                         <article>
                                             <a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
