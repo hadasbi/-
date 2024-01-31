@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<!--
+    Editorial by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Hadas Biran</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+    </head>
+    <body class="is-preload">
+
+        <!-- Wrapper -->
+            <div id="wrapper">
+
+                <!-- Main -->
+                    <div id="main">
+                        <div class="inner">
+
+                            <!-- Header -->
+                                <header id="header">
+                                </header>
+
+                            <!-- Banner -->
+                                <section id="banner">
+                                    <div class="content">
+                                        <header>
+                                            <h1>Hadas Biran</h1>
+                                            <p>PhD candidate, Computer Science, Technion</p>
+                                            <p>Supervisors: Prof. Zohar Yakhini and Prof. Yael Mandel-Gutfreund</p>
+                                            <p>hadas.moriah AT gmail.com</p>
+                                        </header>
+                                        <p>My research aims to develop statistical methods for the analysis of gene expression data, with a focus on single-cell data and spatial transcriptomics.</p>
+                                    </div>
+                                    <img src="images/me.jpeg" alt=""   width="300" height="400"/>
+                                </section>
+
+                            <!-- Section -->
+                                <section>
+                                    <header class="major">
+                                        <h2>Research projects</h2>
+                                    </header>
+                                    <div class="posts">
+                                        <article>
+                                            <a href="#" class="image"><img src="images/results_fig_MouseBrainSP2.png" alt="" /></a>
+                                            <h3>SPIRAL: Significant Process InfeRence ALgorithm for single cell RNA-sequencing and spatial transcriptomics</h3>
+                                            <p>Gene expression data holds the potential to shed light on multiple biological processes at once. However, data analysis methods for single cell sequencing mostly focus on finding cell clusters or the principal progression line of the data. Data analysis for spatial transcriptomics mostly addresses clustering and finding spatially variable genes. Existing data analysis methods are effective in finding the main data features, but they might miss less pronounced, albeit significant, processes, possibly involving a subset of the samples.
+<br>In this work we present SPIRAL, an algorithm based on Gaussian statistics to detect all statistically significant biological processes in single cell, bulk and spatial transcriptomics data. The algorithm outputs a list of structures, each defined by a set of genes working simultaneously in a specific population of cells. SPIRAL is unique in its flexibility: the structures are constructed by selecting subsets of genes and cells based on statistically significant and consistent differential expression. Every gene and every cell may be part of one structure, more or none. SPIRAL also provides several visual representations of structures and pathway enrichment information. We validated the statistical soundness of SPIRAL on synthetic datasets and applied it to single cell, spatial and bulk RNA-sequencing datasets.</p>
+                                            <ul class="actions">
+                                                <li><a href="https://doi.org/10.1101/2022.05.24.493189" class="button">Paper</a></li>
+                                            </ul>
+                                        </article>
+                                        <article>
+                                            <a href="#" class="image"><img src="images/mitea_figure1.png" alt="" /></a>
+                                            <h3>Inferring single-cell and spatial microRNA activity from transcriptomics data</h3>
+                                            <p>The activity of miRNA varies across different cell populations and systems, as part of the mechanisms that distinguish cell types and roles in living organisms and in human health and disease. 
+Typically, miRNA regulation drives changes in the composition and levels of protein coding RNA and of lncRNA, with targets being down-regulated when miRNAs are active.
+The term "miRNA activity" is used to refer to this transcriptional effect of miRNAs. 
+
+<br>This study introduces miTEA-HiRes, a method designed to facilitate the evaluation of miRNA activity at high resolution. 
+The method applies to single cell transcriptomics, type-specific single cell populations, and spatial transcriptomics data. 
+By comparing different conditions, differential miRNA activity is inferred. 
+For instance, miTEA-HiRes analysis of PBMCs comparing MS patients to control groups revealed differential activity of miR-20a-5p and others, consistent with literature on miRNA underexpression in MS. We also show miR-519a-3p differential activity in specific cell populations.</p>
+                                            <ul class="actions">
+                                                <li><a href="https://github.com/EfiHerbst31/microRNA-activity-maps" class="button">Repository</a></li>
+                                            </ul>
+                                        </article>
+                                        <article>
+                                            <a href="#" class="image"><img src="images/point_mutation_detection_diagram.png" alt="" /></a>
+                                            <h3>Point mutations detection in bulk RNA-seq samples</h3>
+                                            <p>Genetic heterogeneity within solid tumors is a widely acknowledged and crucial consideration, especially given the focus of numerous new treatments on targeting known mutations.
+In this work we studied genetic heterogeneity in basal cell carcinoma (BCC). 
+We devised an analysis pipeline to detect somatic mutations in bulk RNA-seq reads from BCC samples, by comparing samples obtained from multiple regions in the same lesion.
+We examined the tumors of three patients and detected 22, 30, and 6 genome locations with significantly different variant specific expression across intra-tumor samples. 
+These variations potentially indicate the presence of somatic point mutations, highlighting the spatial variability and clonal heterogeneity inherent in these tumors.</p>
+                                            <ul class="actions">
+                                                <li><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0293744" class="button">Paper</a></li>
+                                            </ul>
+                                        </article>
+                                        <article>
+                                            <a href="#" class="image"><img src="images/pihg.png" alt="" /></a>
+                                            <h3>piHG: Partial Intersection HyperGeometric test</h3>
+                                            <p>Researchers often study the intersections of multiple sets of items. In Biology, this task is very common: merging lists of proteins from several replicates of an experiment or merging lists of genes reported by different papers. A merged set may be formed by an intersection of all lists, by a union of them, or by an in-between solution, for example - all items that appear in at least <MATH>s</MATH> lists out of <MATH>n</MATH> (note that the full intersection is given by <MATH>s=n</MATH>, and the union is given by <MATH>s=1</MATH>). However, due to the absence of statistical evaluation protocols, partial intersection results are usually decided upon arbitrarily and reported 
+                                              without an indication of their statistical significance.
+<br>We developed a statistical framework to evaluate the significance of the size of a partial intersection set that was formed by assembling all items that are
+members of at least <MATH>s</MATH> out of <MATH>n</MATH> sets. More explicitly, for any overall number of items <MATH>N</MATH>, sizes of sets <MATH>w_1,...,w_n</MATH>, number of sets <MATH>n</MATH>
+and a parameter <MATH>s\in \{1,...,n\}</MATH>, we
+developed a mathematical formula to evaluate the p-value for getting an actual partial intersection set of size <MATH>x</MATH>. Since this formula is computationally heavy, we also
+developed a binomial approximation scheme.
+<br>We developed methods and tools to support statistically informed decision as to the type of merging process, based on partial
+intersections, that best fits the data. That is, for any <MATH>n</MATH> sets of items, one can conclude the <MATH>s</MATH> for which the agreement between sets is maximal, obtaining the best statistical significance. The choice is no longer
+arbitrary.
+<br>We applied this approach to two datasets: the contaminant repository for affinity purification mass spectrometry data (CRAPome), and a meta-analysis for marker genes of two cell types in the mammary gland. We plan to make this approach available as a webtool for the research community.</p>
+                                        </article>
+                                        <article>
+                                            <a href="#" class="image"><img src="images/comparative.jpg" alt="" /></a>
+                                            <h3>Comparative Analysis of Normalization Methods for Network Propagation</h3>
+                                            <p>Network propagation is a central tool in biological research. While a number of variants and normalizations have been proposed for this method, each has its own shortcomings and no large scale assessment of those variants is available. Here we propose a novel normalization method for network propagation that is based on evaluating the propagation results against those obtained on randomized networks that preserve node degrees. In this way, our method overcomes potential biases of previous methods. We evaluate its performance on multiple large scale datasets and find that it compares favorably to previous approaches in diverse gene prioritization tasks. We further demonstrate its utility on a focused dataset of telomere length maintenance in yeast.</p>
+                                            <ul class="actions">
+                                                <li><a href="https://www.frontiersin.org/articles/10.3389/fgene.2019.00004/full" class="button">Paper</a></li>
+                                            </ul>
+                                        </article>
+                           
+                                    </div>
+                                </section>
+
+                            <!-- Footer -->
+                                <footer id="footer">
+                                    <a href="https://github.com/hadasbi" class="image"><img src="images/githublogo.png" alt=""  width="30" height="30"/></a>
+                                    <p class="copyright">&copy; hadasb.github.io | Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                                </footer>
+
+                        </div>
+                    </div>
+
+            </div>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
